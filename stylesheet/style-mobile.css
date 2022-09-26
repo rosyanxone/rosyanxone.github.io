@@ -1,0 +1,188 @@
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -3px;
+    left: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0.0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    scale: 0;
+}
+
+
+/* Responsive Mobile */
+@media (max-width: 650px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Navbar */
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/header-3.jpg);
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid white;
+    }
+    
+    nav ul li a:hover {
+        transition: 0.1s;
+        color: white;
+        border-bottom: 3px solid black;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* HEADER */
+    .header-container {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .header-item-left {
+        text-align: center;
+    }
+    
+    .header-item-left h1 {
+        padding-top: 0;
+    }
+    
+    .header-item-left p {
+        padding-right: 0;
+    }
+
+    .rent-btn {
+        padding: 9px 30px;
+    }
+    
+    .play-btn {
+        padding: 9px 50px;
+    }
+
+    .header-item-left img {
+        width: 300px;
+    }
+
+    .img-gif {
+        height: 40vh;
+    }
+
+    /* SECTION */
+    /* about */
+    .about-container {
+        padding: 20px;
+        font-size: 12px;
+    }
+    
+    .about-title h2 {
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /* partners */
+    .partners-container {
+        height: 200px;
+    }
+    
+    .content-img img {
+        height: 40px;
+    }
+    
+    /* service */
+    .service-container {
+        padding: 20px;
+    }
+    
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-panel {
+        margin: 10.5px 0;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 400px;
+        padding: 0;
+        padding: 30px 20px 5px 20px;
+    }
+    
+    .footer-title h2 {
+        font-size: 30px;
+    }
+
+    .footer-contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 30px;
+    }
+}
