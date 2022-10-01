@@ -1,0 +1,460 @@
+@import url(//db.onlinewebfonts.com/c/213e56f9ea368890b9d2da0577e49dab?family=Zona+Pro);
+@font-face {font-family: "Zona Pro"; src: url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.eot"); src: url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.woff") format("woff"), url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/213e56f9ea368890b9d2da0577e49dab.svg#Zona Pro") format("svg"); }
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+  }
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.dark {
+    transition: 0.5s;
+    background-color: black !important;
+    color: white !important;
+}
+
+.light-img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    color: black;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo a {
+    font-family: Viga;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #383d41;
+}
+
+nav ul li a:hover {
+    transition: 0.1s;
+    color: black;
+	border-bottom: 3px solid #091353;
+}
+
+/* HEADER */
+
+header {
+    background-image: url(../img/background/header-3.jpg);
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 70px 70px 50px 70px;
+}
+
+.header-item-left {
+    padding: 10px;
+    flex: 50%;
+    text-align: left;
+}
+
+.header-item-left h1 {
+    padding-top: 80px;
+    color: white;
+    text-shadow: 0 0 15px #5558d6 ;
+    font-family: 'Zona Pro', sans-serif;
+}
+
+.header-item-left p {
+    font-size: 14px;
+    color: white;
+    padding-right: 25%;
+    margin: 10px 0;
+}
+
+.rent-btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	padding: 9px 50px;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 15px;
+	color: #fff;
+	background-color: #0170cd;
+    border: 1px solid #0170cd;
+    transition: 0.8s;
+}
+
+.rent-btn:hover {
+    transition: 0.8s;
+    cursor: pointer;
+    background-color: #5558d6;
+    color: #fff;
+    border: 1px solid #5558d6;
+}
+
+.play-btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 9px 70px;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.8s;
+}
+
+.play-btn:hover {
+    transition: 0.8s;
+    cursor: pointer;
+	background-color: #fff;
+    color: black;
+}
+
+.header-item-left a {
+    text-decoration: none;
+}
+
+.header-item-left button {
+    margin-bottom: 20px;
+}
+
+.header-item-left h4 {
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+}
+
+.header-item-left img {
+    width: 400px;
+}
+
+.header-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.img-gif {
+    height: 80vh;
+}
+
+
+/* SECTION */
+/* about */
+.about-container {
+    padding: 70px;
+}
+
+.about-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Zona Pro', sans-serif;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    font-size: auto;
+    text-align: center;
+}
+
+.about-item-left {
+    padding-right: 2%;
+    flex: 50%;
+    text-align: left;
+}
+
+.about-item-right {
+    padding-left: 2%;
+    flex: 50%;
+    text-align: right;
+}
+
+/* partners */
+.partners-container {
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/service/ps5-bg.png);
+    background-size: cover;
+}
+
+.partners-container h3 {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 0 10px black ;
+    padding-bottom: 20px;
+}
+
+.content-img {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-img img {
+    height: 70px;
+}
+
+
+/* service */
+.service-container {
+    background-color: #eee;
+    padding: 90px;
+}
+
+.service-container h3 {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0 0 10px white;
+    padding-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-panel {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 240px;
+    height: 250px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin: 0 10.5px;
+}
+
+.card-panel img {
+    height: 60px;
+}
+
+.card-panel h4 {
+    font-size: 35px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.card-panel p {
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    height: 100%;
+	background-color: #383d41;
+    padding: 120px 120px 30px 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Zona Pro', sans-serif;
+    font-size: 40px;
+}
+
+.footer-contact-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* social media logo */
+.circle-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.circle {
+    margin-right: 9px;
+    width: 40px;
+    padding: 5px 10px 3px 6px;
+    display: flex;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.circle.ig:hover {
+  background-color: rgb(225,48,108);
+  border: 2px solid rgb(225,48,108);
+  transition: 0.5s;
+  cursor: pointer;  
+}
+.circle.fb:hover {
+  background-color: rgb(58,89,152);
+  border: 2px solid rgb(58,89,152);
+  transition: 0.5s;
+  cursor: pointer;  
+}
+.circle.wa:hover {
+  background-color: rgb(0,231,119);
+  border: 2px solid rgb(0,231,119);
+  transition: 0.5s;
+  cursor: pointer;  
+}
+.circle.tw:hover {
+  background-color: rgb(70,193,246);
+  border: 2px solid rgb(70,193,246);
+  transition: 0.5s;
+  cursor: pointer;  
+}
+
+.circle a {
+    text-decoration: none;
+}
+
+.circle img {
+  width: 25px;
+  border-radius: 10px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+/* Responsive Tablet */
+@media (max-width: 840px) {
+
+    /* HEADER */
+    .header-container {
+        padding: 20px;
+    }
+
+    .header-item-left h1 {
+        padding-top: 0;
+    }
+    
+    .header-item-left p {
+        padding-right: 0;
+    }
+
+    .header-item-right {
+        flex: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-gif {
+        height: 28vh;
+    }
+}
