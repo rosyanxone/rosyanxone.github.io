@@ -56,7 +56,6 @@
 /* Responsive Mobile */
 @media (max-width: 650px) {
 
-
     .menu-toggle {
         display: flex;
     }
@@ -108,8 +107,9 @@
     }
     
     .header-item-left h1 {
-        font-weight: bold;
+        font-weight: bolder;
         padding-top: 50px;
+        text-shadow: 0 0 10px #5558d6 ;
     }
     
     .header-item-left p {

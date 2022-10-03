@@ -15,10 +15,12 @@ body {
     color: black;
   }
 
+/* dark mode switch */
 .checkbox {
 	opacity: 0;
 	position: absolute;
 }
+
 .label {
 	background-color: #111;
 	border-radius: 50px;
@@ -49,7 +51,6 @@ body {
 	transform: translateX(24px);
 }
 
-
 .fa-moon {
 	color: #f1c40f;
 }
@@ -58,9 +59,13 @@ body {
 	color: #f39c12;
 }
 
-.dark {
+/* kebutuhan dark mode */
+.dark-bg {
     transition: 0.5s;
     background-color: black !important;
+}
+
+.light-text {
     color: white !important;
 }
 
@@ -265,7 +270,6 @@ header {
     text-align: center;
     font-weight: 400;
     color: white;
-    text-shadow: 0 0 10px black ;
     padding-bottom: 20px;
 }
 
@@ -292,7 +296,6 @@ header {
     text-align: center;
     font-weight: 600;
     color: black;
-    text-shadow: 0 0 10px white;
     padding-bottom: 20px;
 }
 

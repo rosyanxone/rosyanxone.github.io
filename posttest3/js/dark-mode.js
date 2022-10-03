@@ -1,4 +1,6 @@
+// penggunaan jquery
 $('#chk').change(() => {
-    $('.mode').toggleClass('dark'); 
+    $('.mode-bg').toggleClass('dark-bg'); 
+    $('.mode-text').toggleClass('light-text'); 
     $('.mode-img').toggleClass('light-img');
 });
