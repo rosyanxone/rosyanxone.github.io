@@ -60,16 +60,22 @@ body {
 }
 
 /* kebutuhan dark mode */
+.mode-bg, .mode-text, .mode-img {
+    transition: 0.5s;
+}
+
 .dark-bg {
     transition: 0.5s;
     background-color: black !important;
 }
 
 .light-text {
+    transition: 0.5s;
     color: white !important;
 }
 
 .light-img {
+    transition: 0.5s;
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }

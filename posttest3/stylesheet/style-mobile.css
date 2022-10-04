@@ -109,7 +109,7 @@
     .header-item-left h1 {
         font-weight: bolder;
         padding-top: 50px;
-        text-shadow: 0 0 10px #5558d6 ;
+        text-shadow: 0 0 5px #5558d6;
     }
     
     .header-item-left p {
